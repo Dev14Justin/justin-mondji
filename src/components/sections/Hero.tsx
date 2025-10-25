@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FiGithub, FiLinkedin, FiMail, FiArrowRight } from 'react-icons/fi';
+import { FiMail, FiArrowRight } from 'react-icons/fi';
 import { HiOutlineCode, HiOutlineDesktopComputer, HiOutlineDeviceMobile } from 'react-icons/hi';
 
 export default function Hero() {
@@ -84,7 +84,7 @@ export default function Hero() {
           className="text-4xl md:text-5xl font-bold mb-4 text-[hsl(var(--title))]"
         >
           Justin MONDJI 
-        </motion.h1>
+        </motion.h1> 
 
         <motion.h2 
           variants={itemVariants}

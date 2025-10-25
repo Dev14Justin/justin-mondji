@@ -13,6 +13,8 @@ import {
   SiWordpress,
 } from "react-icons/si";
 import type { IconType } from "react-icons";
+import { FiUser } from "react-icons/fi";
+import { VscTools } from "react-icons/vsc";
 
 interface StackItem {
   icon: IconType;
@@ -121,9 +123,9 @@ function About() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-bold mb-6 text-center text-[hsl(var(--title))]"
+          className="text-3xl md:text-4xl font-bold mb-6 text-center text-[hsl(var(--title))] flex items-center justify-center gap-3"
         >
-          À propos de moi
+          <FiUser className="w-8 h-8" /> À propos de moi
         </motion.h2>
 
         {/* Main description */}
@@ -141,7 +143,7 @@ function About() {
           performantes qui répondent aux besoins spécifiques de chaque projet.
         </motion.p>
 
-        {/* Stack section */}
+        {/* Stack section */} 
         <motion.div
           variants={itemVariants}
           initial="hidden"
@@ -149,8 +151,8 @@ function About() {
           viewport={{ once: true }}
           className="mb-8"
         >
-          <h3 className="text-2xl md:text-3xl font-bold mb-6 text-center text-[hsl(var(--title))]">
-            Mes stacks
+          <h3 className="text-2xl md:text-3xl font-bold mb-6 text-center text-[hsl(var(--title))] flex items-center justify-center gap-3">
+            <VscTools className="w-8 h-8"/> Mes stacks
           </h3>
           <p className="text-lg text-[hsl(var(--muted-foreground))] max-w-2xl mx-auto mb-12 text-center">
             Découvrez les technologies et outils que j'utilise pour donner vie à

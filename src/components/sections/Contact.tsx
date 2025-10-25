@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FiLinkedin, FiGithub, FiMail, FiDownload } from 'react-icons/fi';
+import { FiLinkedin, FiGithub, FiMail, FiDownload, FiUser } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
 
 export default function Contact() {
@@ -26,7 +26,7 @@ export default function Contact() {
 
 
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="">
       <div className="container mx-auto px-4">
         <motion.div
           className="max-w-4xl mx-auto"
@@ -36,8 +36,8 @@ export default function Contact() {
           variants={containerVariants}
         >
           <motion.div className="text-center mb-12" variants={itemVariants}>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[hsl(var(--title))]">
-              Contact
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[hsl(var(--title))] text-center flex items-center justify-center gap-3">
+              <FiUser className="w-8 h-8" /> Contact
             </h2>
             <p className="text-[hsl(var(--muted-foreground))] max-w-2xl mx-auto">
               Connectons-nous et construisons quelque chose d'extraordinaire ensemble
@@ -51,7 +51,7 @@ export default function Contact() {
               variants={containerVariants}
             >
               <motion.a
-                href="https://www.linkedin.com/in/justin-mondji/"
+                href="https://www.linkedin.com/in/justin-mondji-976b1a303/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group p-6 bg-[hsl(var(--card))] border border-[hsl(var(--border))] 
@@ -69,7 +69,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-medium text-[hsl(var(--foreground))]">LinkedIn</h3>
-                  <p className="text-sm text-[hsl(var(--muted-foreground))]">linkedin</p>
+                  <p className="text-sm text-[hsl(var(--muted-foreground))]">Mon profile Linkedin</p>
                 </div>
               </motion.a>
 
@@ -92,12 +92,12 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-medium text-[hsl(var(--foreground))]">WhatsApp</h3>
-                  <p className="text-sm text-[hsl(var(--muted-foreground))]">Discutons</p>
+                  <p className="text-sm text-[hsl(var(--muted-foreground))]">Discutons dans mon inboss</p>
                 </div>
               </motion.a>
 
               <motion.a
-                href="https://github.com/justinPodo"
+                href="https://github.com/Dev14Justin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group p-6 bg-[hsl(var(--card))] border border-[hsl(var(--border))] 
@@ -115,7 +115,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-medium text-[hsl(var(--foreground))]">GitHub</h3>
-                  <p className="text-sm text-[hsl(var(--muted-foreground))]">GitHub</p>
+                  <p className="text-sm text-[hsl(var(--muted-foreground))]">Mon profile GitHub</p>
                 </div>
               </motion.a>
 
@@ -136,7 +136,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-medium text-[hsl(var(--foreground))]">E-mail</h3>
-                  <p className="text-sm text-[hsl(var(--muted-foreground))]">E-mail</p>
+                  <p className="text-sm text-[hsl(var(--muted-foreground))]">Discutons par mail</p>
                 </div>
               </motion.a>
             </motion.div>
@@ -150,7 +150,7 @@ export default function Contact() {
               <h3 className="text-xl font-semibold text-[hsl(var(--foreground))]">
                 Besoin d'un document imprimé ?
               </h3>
-              <p className="text-center text-[hsl(var(--muted-foreground))]">
+              <p className="text-center text-[hsl(var(--muted-foreground))] ">
                 Cliquez pour télécharger
               </p>
               <motion.a
@@ -158,16 +158,16 @@ export default function Contact() {
                 download
                 className="flex items-center gap-2 px-6 py-3 bg-[hsl(var(--primary))] 
                          text-[hsl(var(--primary-foreground))] rounded-full
-                         hover:bg-[hsl(var(--primary-hover))] transition-colors"
+                         hover:bg-[hsl(var(--primary-hover))] transition-colors hover:border border-[hsl(var(--primary))]"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <FiDownload className="w-5 h-5" />
+                <FiDownload className="w-5 h-5 " />
                 Télécharger le CV
               </motion.a>
             </motion.div>
           </div>
-        </motion.div>
+        </motion.div> 
       </div>
     </section>
   );

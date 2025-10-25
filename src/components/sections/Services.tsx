@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { FiGlobe, FiSmartphone, FiSearch, FiTool, FiCode, FiUsers } from 'react-icons/fi';
 import type { IconType } from 'react-icons';
+import { MdOutlineHomeRepairService } from 'react-icons/md';
 
 interface Service {
   icon: IconType;
@@ -72,7 +73,7 @@ export default function Services() {
   };
 
   return (
-    <section id="services" className="py-20 bg-[hsl(var(--background))]">
+    <section id="services" className=" bg-[hsl(var(--background))]">
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center mb-16"
@@ -82,10 +83,10 @@ export default function Services() {
           variants={containerVariants}
         >
           <motion.h2 
-            className="text-3xl md:text-4xl font-bold mb-4 text-[hsl(var(--title))]"
+            className="text-3xl md:text-4xl font-bold mb-4 text-[hsl(var(--title))] text-center flex items-center justify-center gap-3"
             variants={itemVariants}
           >
-            Mes Services
+            <MdOutlineHomeRepairService className="w-8 h-8" /> Mes Services
           </motion.h2>
           <motion.p
             className="text-[hsl(var(--muted-foreground))] max-w-2xl mx-auto"
@@ -118,7 +119,7 @@ export default function Services() {
                 <div className="flex items-center gap-4 mb-2">
                   <div className="p-3 rounded-lg bg-[hsl(var(--primary)/0.1)] text-[hsl(var(--primary))]">
                     <service.icon className="w-6 h-6" />
-                  </div>
+                  </div> 
                   <h3 className="text-xl font-semibold text-[hsl(var(--foreground))]">
                     {service.title}
                   </h3>

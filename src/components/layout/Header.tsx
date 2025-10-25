@@ -5,7 +5,7 @@ export default function Header() {
     { href: '#services', label: 'Services' },
     { href: '#projects', label: 'Projects' },
     { href: '#about', label: 'À propos' },
-    { href: '#contact', label: 'Contact' },
+    { href: '#contact', label: 'Contact' }, 
   ];
 
   return (
@@ -15,7 +15,7 @@ export default function Header() {
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ type: "spring", duration: 0.8 }}
-          className="w-full md:w-fit md:mt-6 px-6 py-3 bg-[#0A192F]/90 backdrop-blur-md border-b md:border border-white/10 shadow-lg shadow-black/5 md:rounded-full"
+          className="w-full md:w-fit md:mt-6 px-6 py-3 bg-hsl(var(--background)) backdrop-blur-md border-b md:border border-hsl(var(--primary-foreground)) shadow-lg shadow-black/5 md:rounded-full"
         >
           <div className="flex items-center justify-between md:justify-center gap-4 md:gap-12">
           {/* Left Menu Items */}
@@ -24,7 +24,7 @@ export default function Header() {
               <motion.a
                 key={item.href}
                 href={item.href}
-                className="text-white/70 hover:text-white transition-colors text-xs md:text-sm tracking-wider whitespace-nowrap"
+                className="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--foreground))] transition-colors text-xs md:text-sm tracking-wider whitespace-nowrap"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -55,7 +55,7 @@ export default function Header() {
               <motion.a
                 key={item.href}
                 href={item.href}
-                className="text-white/70 hover:text-white transition-colors text-xs md:text-sm tracking-wider whitespace-nowrap"
+                className="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--foreground))] transition-colors text-xs md:text-sm tracking-wider whitespace-nowrap"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
