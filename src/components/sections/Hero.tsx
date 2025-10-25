@@ -1,4 +1,4 @@
-import { motion, Variants } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import { FiMail, FiArrowRight } from 'react-icons/fi';
 import { HiOutlineCode, HiOutlineDesktopComputer, HiOutlineDeviceMobile } from 'react-icons/hi';
 
