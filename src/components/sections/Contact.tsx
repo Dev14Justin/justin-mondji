@@ -158,7 +158,7 @@ export default function Contact() {
                 download
                 className="flex items-center gap-2 px-6 py-3 bg-[hsl(var(--primary))] 
                          text-[hsl(var(--primary-foreground))] rounded-full
-                         hover:bg-[hsl(var(--primary-hover))] transition-colors hover:border border-[hsl(var(--primary))]"
+                         hover:bg-[hsl(var(--primary-hover))] hover:text-[hsl(var(--primary-hover))] transition-colors hover:border border-[hsl(var(--primary))]"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
