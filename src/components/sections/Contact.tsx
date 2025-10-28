@@ -92,7 +92,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-medium text-[hsl(var(--foreground))]">WhatsApp</h3>
-                  <p className="text-sm text-[hsl(var(--muted-foreground))]">Discutons dans mon inboss</p>
+                  <p className="text-sm text-[hsl(var(--muted-foreground))]">Discutons dans mon inbox</p>
                 </div>
               </motion.a>
 
@@ -151,7 +151,7 @@ export default function Contact() {
                 Besoin d'un document imprimé ?
               </h3>
               <p className="text-center text-[hsl(var(--muted-foreground))] ">
-                Cliquez pour télécharger
+                Cliquez pour télécharger mon cv
               </p>
               <motion.a
                 href="/CV-Justin-MONDJI.pdf"
